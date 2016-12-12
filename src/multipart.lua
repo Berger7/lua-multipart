@@ -10,7 +10,7 @@ setmetatable(MultipartData, {
 })
 
 local function is_header(value)
-  return string.match(value, "(%S+):%s*(%S+)")
+  return string.match(value, "(%S+):%s+(%S+)")
 end
 
 local function table_size(t)
